@@ -10,19 +10,19 @@ app.get('/*', (req, res) => {
       <head>
         <meta name="twitter:card" content="player">
         <meta name="twitter:site" content="Video">
-        <meta name="twitter:image" content="https://files.catbox.moe/rh0eua.webp">
+        <meta name="twitter:image" content="https://catbox.moe/rh0eua.webp">
         <meta name="twitter:player:width" content="1280">
         <meta name="twitter:player:height" content="720">
-        <meta name="twitter:player" content="https://files.catbox.moe/${req.url}">
+        <meta name="twitter:player" content="https://catbox.moe/${req.url}">
         <link rel="amphtml" href="https://files.catbox.moe/${req.url}">
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1280">
         <meta property="og:image:height" content="720">
-        <meta property="og:image" content="https://files.catbox.moe/rh0eua.webp">
+        <meta property="og:image" content="https://catbox.moe/rh0eua.webp">
         <meta property="og:url" content="${req.headers.host}${req.url}" />
-        <meta property="og:video" content="https://files.catbox.moe/${req.url}">
-        <meta property="og:video:url" content="https://files.catbox.moe/${req.url}">
-        <meta property="og:video:secure:url" content="https://files.catbox.moe/${req.url}"> 
+        <meta property="og:video" content="https://catbox.moe/${req.url}">
+        <meta property="og:video:url" content="https://catbox.moe/${req.url}">
+        <meta property="og:video:secure:url" content="https://catbox.moe/${req.url}"> 
         <meta property="og:video:type" content="video/mp4">
         <meta property="og:video:width" content="1280">
         <meta property="og:video:height" content="720">
@@ -30,7 +30,7 @@ app.get('/*', (req, res) => {
       </head>
       <body>
         <div id="root">
-            <h1><a ref="https://files.catbox.moe/${req.url}">https://files.catbox.moe/${req.url}</h1>
+            <h1><a href="https://files.catbox.moe/${req.url}">https://catbox.moe/${req.url}</h1>
            <iframe src="https://files.catbox.moe/${req.url}"></iframe> 
         </div>
       </body>
