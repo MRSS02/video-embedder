@@ -8,6 +8,8 @@ app.get('/*', (req, res) => {
   const html = `<!DOCTYPE html>
     <html lang="en">
       <head>
+        <meta name="theme-color" content="#00FFAA" />
+        <meta name="description" content="Video Preview">
         <meta name="twitter:card" content="player">
         <meta name="twitter:site" content="Video">
         <meta name="twitter:image" content="https://files.catbox.moe/rh0eua.webp">
