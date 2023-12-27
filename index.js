@@ -13,6 +13,7 @@ app.get('/*', (req, res) => {
         <meta name="twitter:image" content="https://catbox.moe/rh0eua.webp">
         <meta name="twitter:player:width" content="1280">
         <meta name="twitter:player:height" content="720">
+        <meta name="twitter:player:stream" content="https://catbox.moe/${req.url}">
         <meta name="twitter:player" content="https://catbox.moe/${req.url}">
         <link rel="amphtml" href="https://files.catbox.moe/${req.url}">
         <meta property="og:image:type" content="image/webp" />
