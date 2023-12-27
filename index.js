@@ -34,7 +34,7 @@ app.get('/*', (req, res) => {
       <body>
         <div id="root">
             <h1><a href="https://files.catbox.moe/${req.url}">https://files.catbox.moe/${req.url}</a></h1>
-           <iframe src="https://files.catbox.moe/${req.url}"></iframe> 
+           <iframe height="40%" width="80%" src="https://files.catbox.moe/${req.url}"></iframe> 
         </div>
       </body>
     </html>
