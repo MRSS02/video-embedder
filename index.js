@@ -32,6 +32,7 @@ app.get('/*', (req, res) => {
         <meta property="og:video" content="https://files.catbox.moe/${req.path}">
         <meta property="og:video:url" content="https://files.catbox.moe/${req.path}">
         <meta property="og:video:secure:url" content="https://files.catbox.moe/${req.path}"> 
+        <meta name="twitter:creator" content="MParaGame's Video Embedder">
         <meta property="og:video:type" content="video/mp4">
         <meta property="og:video:width" content="1280">
         <meta property="og:video:height" content="720">
