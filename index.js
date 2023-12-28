@@ -15,8 +15,15 @@ app.get('/*', (req, res) => {
             tezt-align: center;
           }
           .video {
+            width: 90%;
             margin-left: auto;
             margin-right: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          a {
+            color: #00FFFF;
           }
         </style>
         <meta name="theme-color" content="#00FFAA" />
@@ -51,8 +58,8 @@ app.get('/*', (req, res) => {
             <h1>MParaGame's video embedder</h1>
             <h2>${req.query?.name || ""}</h2>
             <h3><a href="https://files.catbox.moe${req.path}">https://files.catbox.moe${req.path}</a></h3>
-            <div>
-              <video class="video" width='1280' height='720' controls preload='metadata'><source src="https://files.catbox.moe${req.path}" type='video/mp4'></video>
+            <div class="video" >
+              <video width='1280' height='720' controls preload='auto'><source src="https://files.catbox.moe${req.path}" type='video/mp4'></video>
             </div>
       </body>
     </html>
