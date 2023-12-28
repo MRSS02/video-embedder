@@ -38,7 +38,7 @@ app.get('/*', (req, res) => {
       <meta name="title" content="MParaGames' Catbox video Embedder" />
      </head>
      <body>
-        <h2>video-embedder</h2>
+        <h2>MParaGames's Catbox Video Embedder</h2>
 
         <p>This is a simple video embedder for Discord that embbeds a video uploaded to <a href="https://catbox.moe">catbox.moe</a>. 
         Only supports video uploads from catbox. Only mp4 support was tested, h264, VP8, VP9, and AV1 videos should work.
