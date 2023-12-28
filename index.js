@@ -20,9 +20,9 @@ app.get('/*', (req, res) => {
         <meta name="twitter:image" content="https://files.catbox.moe/rh0eua.webp">
         <meta name="twitter:player:width" content="1280">
         <meta name="twitter:player:height" content="720">
-        <meta name="twitter:player:stream" content="https://files.catbox.moe/${req.url}">
-        <meta name="twitter:player" content="https://files.catbox.moe/${req.url}">
-        <link rel="amphtml" href="https://files.catbox.moe/${req.url}">
+        <meta name="twitter:player:stream" content="https://files.catbox.moe${req.url}">
+        <meta name="twitter:player" content="https://files.catbox.moe${req.url}">
+        <link rel="amphtml" href="https://files.catbox.moe${req.url}">
         <meta property="og:type" content="video.other">
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1280">
@@ -40,9 +40,9 @@ app.get('/*', (req, res) => {
       </head>
       <body>
         <div id="root">
-            <h1><a href="https://files.catbox.moe/${req.url}">https://files.catbox.moe/${req.url}</a></h1>
+            <h1><a href="https://files.catbox.moe${req.url}">https://files.catbox.moe${req.url}</a></h1>
             <div>
-              <video width='1280' height='720' controls preload='metadata'><source src="https://files.catbox.moe/${req.url}" type='video/mp4'></video>
+              <video width='1280' height='720' controls preload='metadata'><source src="https://files.catbox.moe${req.url}" type='video/mp4'></video>
             </div>
       </body>
     </html>
