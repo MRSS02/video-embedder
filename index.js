@@ -63,7 +63,7 @@ app.get('/*', (req, res) => {
             margin: 0;
             text-align: center;
           }
-          h3, p, smalltext {
+          h1, h3, p, smalltext {
             text-align: center;
           }
         </style>
