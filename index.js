@@ -5,6 +5,28 @@ const app = express();
 
 app.get('/*', (req, res) => {
   
+  if (req.path === "/"){
+    const html = `<!DOCTYPE html>
+    <html lang="en">
+      <head>
+      <style>
+          body {
+            background-color: #333333;
+            color: white;
+            tezt-align: center;
+          }
+          p {
+            tezt-align: center;
+          }
+      </style>
+     <meta name="theme-color" content="#00FFAA" />
+        <meta name="description" content="MParaGames' Video Embedder">
+ 
+    </html> 
+    `
+    return html;
+  }
+
   const html = `<!DOCTYPE html>
     <html lang="en">
       <head>
@@ -36,7 +58,7 @@ app.get('/*', (req, res) => {
           }
         </style>
         <meta name="theme-color" content="#00FFAA" />
-        <meta name="description" content="Video Embedder">
+        <meta name="description" content="Embbed catbox videos on discord">
         <meta name="twitter:card" content="player">
         <meta name="twitter:site" content="Video">
         <meta name="twitter:image" content="https://files.catbox.moe/rh0eua.webp">
@@ -68,10 +90,11 @@ app.get('/*', (req, res) => {
             <h1>MParaGames' video embedder</h1>
             <h2>${req.query?.name || ""}</h2>
             <h3><a href="https://files.catbox.moe${req.path}">https://files.catbox.moe${req.path}</a></h3>
-            <div class="video" >
+            <div class="video">
               <video width="1280" height="720" controls preload="auto"><source src="https://files.catbox.moe${req.path}" type='video/mp4'></video>
-              <p class="smalltext">Check the source code in my <a href="https://github.com/MRSS02/video-embedder">Github<a>!
             </div>
+            <p class="smalltext">Check the source code in my <a href="https://github.com/MRSS02/video-embedder">Github<a>!
+        </div>
             
       </body>
     </html>
