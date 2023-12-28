@@ -16,7 +16,7 @@ app.get('/*', (req, res) => {
             tezt-align: center;
           }
           p {
-            tezt-align: center;
+            text-align: center;
           }
       </style>
      <meta name="theme-color" content="#00FFAA" />
@@ -63,7 +63,7 @@ app.get('/*', (req, res) => {
             margin: 0;
             text-align: center;
           }
-          h3, p, smalltext: {
+          h3, p, smalltext {
             text-align: center;
           }
         </style>
