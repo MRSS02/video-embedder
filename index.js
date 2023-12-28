@@ -41,8 +41,9 @@ app.get('/*', (req, res) => {
       <body>
         <div id="root">
             <h1><a href="https://files.catbox.moe/${req.url}">https://files.catbox.moe/${req.url}</a></h1>
-           <iframe height="1280" width="720" src="https://files.catbox.moe/${req.url}"></iframe> 
-        </div>
+            <div>
+              <video width='1280' height='720' controls preload='metadata'><source src="https://files.catbox.moe/${req.url}" type='video/mp4'></video>
+            </div>
       </body>
     </html>
   `
