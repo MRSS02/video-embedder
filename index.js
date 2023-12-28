@@ -10,7 +10,7 @@ app.get('/*', (req, res) => {
       <head>
         <style>
           #root {
-            color: #333333;
+            background-color: #333333;
           }
         </style>
         <meta name="theme-color" content="#00FFAA" />
