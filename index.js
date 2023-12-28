@@ -23,6 +23,7 @@ app.get('/*', (req, res) => {
             margin-right: auto
           }
       </style>
+      <meta charset="utf-8" />
      <meta name="theme-color" content="#00FFAA" />
      <meta name="description" content="Simple Discord Video Embedder for catbox uploads. Simply replace catbox.moe in upload link with video.starmain.dev!" />
      <meta name=title" content="MParaGames' Catbox video Embedder" />
