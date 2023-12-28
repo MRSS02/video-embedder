@@ -18,7 +18,9 @@ app.get('/*', (req, res) => {
           p {
             text-align: justify;
             width: 90%;
-            max-width: 1000px 
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto
           }
       </style>
      <meta name="theme-color" content="#00FFAA" />
