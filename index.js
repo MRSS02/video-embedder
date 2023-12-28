@@ -22,11 +22,16 @@ app.get('/*', (req, res) => {
             margin-left: auto;
             margin-right: auto
           }
+          a {
+            color: #00FFFF;
+            text-decoration: none;
+            text-align: center;
+          }
       </style>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="theme-color" content="#00FFAA" />
-      <meta name="description" content="Simple Discord Video Embedder for catbox uploads. Simply replace catbox.moe in upload link with video.starmain.dev!" />
+      <meta name="description" content="Simple Discord Video Embedder for catbox uploads. Simply replace files.catbox.moe in upload link with video.starmain.dev!" />
       <meta name="title" content="MParaGames' Catbox video Embedder" />
      </head>
      <body>
@@ -34,10 +39,11 @@ app.get('/*', (req, res) => {
 
         <p>This is a simple video embedder for Discord that embbeds a video uploaded to <a href="https://catbox.moe">catbox.moe</a>. 
         Only supports video uploads from catbox. Only mp4 support was tested, h264, VP8, VP9, and AV1 videos should work.
-        Usage is simple, just replace <a href="https://catbox.moe">catbox.moe</a> with <a href="https://video.starmain.dev">video.starmain.dev</a>
+        <br/><br/>Usage is simple, just replace <a href="https://catbox.moe">catbox.moe</a> with <a href="https://video.starmain.dev">video.starmain.dev</a>
         in your uploaded video link. If you want your video to have a custom name, just put a query on the paramenter name on it.
-        Example: <a href="https://files.catbox.moe/w1tr9y.mp4">https://files.catbox.moe/w1tr9y.mp4</a> can become <a href="https://video.starmain.dev/w1tr9y.mp4?name=my%20Forza%20Horizon%20video">
+        <br/>Example: <a href="https://files.catbox.moe/w1tr9y.mp4">https://files.catbox.moe/w1tr9y.mp4</a> can become <a href="https://video.starmain.dev/w1tr9y.mp4?name=my%20Forza%20Horizon%20video">
         https://video.starmain.dev/w1tr9y.mp4?name=my%20Forza%20Horizon%20video</a> for a video named "My Forza Horizon Video".</p>
+        <p class="smalltext">Check the source code in my <a href="https://github.com/MRSS02/video-embedder">Github</a>!</p>
      </body>
     </html> 
     `
@@ -115,7 +121,7 @@ app.get('/*', (req, res) => {
             <div class="video">
               <video width="1280" height="720" controls preload="auto"><source src="https://files.catbox.moe${req.path}" type='video/mp4'></video>
             </div>
-            <p class="smalltext">Check the source code in my <a href="https://github.com/MRSS02/video-embedder">Github<a>!
+            <p class="smalltext">Check the source code in my <a href="https://github.com/MRSS02/video-embedder">Github</a>!</p>
         </div>
             
       </body>
