@@ -20,8 +20,10 @@ app.get('/*', (req, res) => {
           }
       </style>
      <meta name="theme-color" content="#00FFAA" />
-        <meta name="description" content="MParaGames' Video Embedder">
- 
+     <meta name="description" content="MParaGames' Video Embedder">
+     </head>
+     <body>
+     </body>
     </html> 
     `
     return html;
