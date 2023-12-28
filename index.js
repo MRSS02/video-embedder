@@ -8,6 +8,11 @@ app.get('/*', (req, res) => {
   const html = `<!DOCTYPE html>
     <html lang="en">
       <head>
+        <style>
+          root {
+            color: #333333;
+          }
+        </style>
         <meta name="theme-color" content="#00FFAA" />
         <meta name="description" content="Video Preview">
         <meta name="twitter:card" content="player">
@@ -18,6 +23,7 @@ app.get('/*', (req, res) => {
         <meta name="twitter:player:stream" content="https://files.catbox.moe/${req.url}">
         <meta name="twitter:player" content="https://files.catbox.moe/${req.url}">
         <link rel="amphtml" href="https://files.catbox.moe/${req.url}">
+        <meta property="og:type" content="video.other">
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1280">
         <meta property="og:image:height" content="720">
@@ -34,7 +40,7 @@ app.get('/*', (req, res) => {
       <body>
         <div id="root">
             <h1><a href="https://files.catbox.moe/${req.url}">https://files.catbox.moe/${req.url}</a></h1>
-           <iframe height="40%" width="80%" src="https://files.catbox.moe/${req.url}"></iframe> 
+           <iframe height="1280" width="720" src="https://files.catbox.moe/${req.url}"></iframe> 
         </div>
       </body>
     </html>
