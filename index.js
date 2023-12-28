@@ -35,6 +35,7 @@ app.get('/*', (req, res) => {
         <meta property="og:video:type" content="video/mp4">
         <meta property="og:video:width" content="1280">
         <meta property="og:video:height" content="720">
+        <meta content="Video Embedder" property="og:title" />
 
       </head>
       <body>
