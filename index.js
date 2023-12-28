@@ -41,7 +41,8 @@ app.get('/*', (req, res) => {
       <body>
         <div id="root">
             
-            <h1>MParaGame's video embedder${req.quety.name ? ' - ' + req.query.name || ""}</h1>
+            <h1>MParaGame's video embedder</h1>
+            <h2>${req.quety.name || ""}</h2>
             <h3><a href="https://files.catbox.moe${req.path}">https://files.catbox.moe${req.path}</a></h3>
             <div>
               <video width='1280' height='720' controls preload='metadata'><source src="https://files.catbox.moe${req.path}" type='video/mp4'></video>
