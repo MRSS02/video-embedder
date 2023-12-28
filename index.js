@@ -27,7 +27,7 @@ app.get('/*', (req, res) => {
             text-decoration: none;
             text-align: center;
           }
-          smalltext {
+          .smalltext {
             text-align: center;
           }
       </style>
