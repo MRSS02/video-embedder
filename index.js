@@ -13,10 +13,12 @@ app.get('/*', (req, res) => {
           body {
             background-color: #333333;
             color: white;
-            tezt-align: center;
+            text-align: center;
           }
           p {
-            text-align: center;
+            text-align: justify;
+            width: 90%;
+            max-width: 1000px 
           }
       </style>
      <meta name="theme-color" content="#00FFAA" />
