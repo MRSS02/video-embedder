@@ -24,6 +24,15 @@ app.get('/*', (req, res) => {
           }
           a {
             color: #00FFFF;
+            text-decoration: none;
+            text-align: center;
+          }
+          h2 {
+            margin: 0;
+            text-align: center;
+          }
+          smalltext: {
+            text-align: center;
           }
         </style>
         <meta name="theme-color" content="#00FFAA" />
@@ -61,7 +70,9 @@ app.get('/*', (req, res) => {
             <h3><a href="https://files.catbox.moe${req.path}">https://files.catbox.moe${req.path}</a></h3>
             <div class="video" >
               <video width="1280" height="720" controls preload="auto"><source src="https://files.catbox.moe${req.path}" type='video/mp4'></video>
+              <p class="smalltext">Check the source code in my <a href="https://github.com/MRSS02/video-embedder">Github<a>!
             </div>
+            
       </body>
     </html>
   `
