@@ -35,14 +35,14 @@ app.get('/*', (req, res) => {
         <meta property="og:video:type" content="video/mp4">
         <meta property="og:video:width" content="1280">
         <meta property="og:video:height" content="720">
-        <meta content="${req.query.name || "Video Embedder"}" property="og:title" />
+        <meta content="${req.query?.name || "Video Embedder"}" property="og:title" />
         
       </head>
       <body>
         <div id="root">
             
             <h1>MParaGame's video embedder</h1>
-            <h2>${req.quety.name || ""}</h2>
+            <h2>${req.query?.name || ""}</h2>
             <h3><a href="https://files.catbox.moe${req.path}">https://files.catbox.moe${req.path}</a></h3>
             <div>
               <video width='1280' height='720' controls preload='metadata'><source src="https://files.catbox.moe${req.path}" type='video/mp4'></video>
