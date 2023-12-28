@@ -9,8 +9,14 @@ app.get('/*', (req, res) => {
     <html lang="en">
       <head>
         <style>
-          #root {
+          body {
             background-color: #333333;
+            color: white;
+            tezt-align: center;
+          }
+          .video {
+            margin-left: auto;
+            margin-right: auto;
           }
         </style>
         <meta name="theme-color" content="#00FFAA" />
@@ -46,7 +52,7 @@ app.get('/*', (req, res) => {
             <h2>${req.query?.name || ""}</h2>
             <h3><a href="https://files.catbox.moe${req.path}">https://files.catbox.moe${req.path}</a></h3>
             <div>
-              <video width='1280' height='720' controls><source src="https://files.catbox.moe${req.path}" type='video/mp4'></video>
+              <video class="video" width='1280' height='720' controls><source src="https://files.catbox.moe${req.path}" type='video/mp4'></video>
             </div>
       </body>
     </html>
