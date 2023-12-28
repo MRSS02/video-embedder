@@ -46,7 +46,7 @@ app.get('/*', (req, res) => {
             <h2>${req.query?.name || ""}</h2>
             <h3><a href="https://files.catbox.moe${req.path}">https://files.catbox.moe${req.path}</a></h3>
             <div>
-              <video width='1280' height='720' controls preload='metadata'><source src="https://files.catbox.moe${req.path}" type='video/mp4'></video>
+              <video width='1280' height='720' controls><source src="https://files.catbox.moe${req.path}" type='video/mp4'></video>
             </div>
       </body>
     </html>
