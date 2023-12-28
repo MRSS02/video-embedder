@@ -24,9 +24,10 @@ app.get('/*', (req, res) => {
           }
       </style>
       <meta charset="utf-8" />
-     <meta name="theme-color" content="#00FFAA" />
-     <meta name="description" content="Simple Discord Video Embedder for catbox uploads. Simply replace catbox.moe in upload link with video.starmain.dev!" />
-     <meta name=title" content="MParaGames' Catbox video Embedder" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#00FFAA" />
+      <meta name="description" content="Simple Discord Video Embedder for catbox uploads. Simply replace catbox.moe in upload link with video.starmain.dev!" />
+      <meta name="title" content="MParaGames' Catbox video Embedder" />
      </head>
      <body>
         <h2>video-embedder</h2>
@@ -73,6 +74,8 @@ app.get('/*', (req, res) => {
             text-align: center;
           }
         </style>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#00FFAA" />
         <meta name="description" content="Embbed catbox videos on discord!">
         <meta name="twitter:card" content="player">
