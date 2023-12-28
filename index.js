@@ -56,11 +56,11 @@ app.get('/*', (req, res) => {
       <body>
         <div id="root">
             
-            <h1>MParaGame's video embedder</h1>
+            <h1>MParaGames' video embedder</h1>
             <h2>${req.query?.name || ""}</h2>
             <h3><a href="https://files.catbox.moe${req.path}">https://files.catbox.moe${req.path}</a></h3>
             <div class="video" >
-              <video width='1280' height='720' controls preload='auto'><source src="https://files.catbox.moe${req.path}" type='video/mp4'></video>
+              <video width="1280" height="720" controls preload="auto"><source src="https://files.catbox.moe${req.path}" type='video/mp4'></video>
             </div>
       </body>
     </html>
