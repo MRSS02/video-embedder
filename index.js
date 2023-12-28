@@ -24,7 +24,8 @@ app.get('/*', (req, res) => {
           }
       </style>
      <meta name="theme-color" content="#00FFAA" />
-     <meta name="description" content="MParaGames' Video Embedder">
+     <meta name="description" content="Simple Discord Video Embedder for catbox uploads. Simply replace catbox.moe in upload link with video.starmain.dev!" />
+     <meta name=title" content="MParaGames' Catbox video Embedder" />
      </head>
      <body>
         <h2>video-embedder</h2>
@@ -32,7 +33,7 @@ app.get('/*', (req, res) => {
         <p>This is a simple video embedder for Discord that embbeds a video uploaded to <a href="https://catbox.moe">catbox.moe</a>. 
         Only supports video uploads from catbox. Only mp4 support was tested, h264, VP8, VP9, and AV1 videos should work.
         Usage is simple, just replace <a href="https://catbox.moe">catbox.moe</a> with <a href="https://video.starmain.dev">video.starmain.dev</a>
-        in your uploaded video link. <br />If you want your video to have a custom name, just put a query on the paramenter name on it.
+        in your uploaded video link. If you want your video to have a custom name, just put a query on the paramenter name on it.
         Example: <a href="https://files.catbox.moe/w1tr9y.mp4">https://files.catbox.moe/w1tr9y.mp4</a> can become <a href="https://video.starmain.dev/w1tr9y.mp4?name=my%20Forza%20Horizon%20video">
         https://video.starmain.dev/w1tr9y.mp4?name=my%20Forza%20Horizon%20video</a> for a video named "My Forza Horizon Video".</p>
      </body>
@@ -72,7 +73,7 @@ app.get('/*', (req, res) => {
           }
         </style>
         <meta name="theme-color" content="#00FFAA" />
-        <meta name="description" content="Embbed catbox videos on discord">
+        <meta name="description" content="Embbed catbox videos on discord!">
         <meta name="twitter:card" content="player">
         <meta name="twitter:site" content="Video">
         <meta name="twitter:image" content="https://files.catbox.moe/rh0eua.webp">
@@ -91,17 +92,17 @@ app.get('/*', (req, res) => {
         <meta property="og:video" content="https://files.catbox.moe/${req.path}">
         <meta property="og:video:url" content="https://files.catbox.moe/${req.path}">
         <meta property="og:video:secure:url" content="https://files.catbox.moe/${req.path}"> 
-        <meta name="twitter:creator" content="MParaGames' Video Embedder">
+        <meta name="twitter:creator" content="MParaGames' Catbox Video Embedder">
         <meta property="og:video:type" content="video/mp4">
         <meta property="og:video:width" content="1280">
         <meta property="og:video:height" content="720">
-        <meta content="${req.query?.name || "Video Embedder"}" property="og:title" />
+        <meta content="${req.query?.name || "MParaGame's Catbox Video Embedder"}" property="og:title" />
         
       </head>
       <body>
         <div id="root">
             
-            <h1>MParaGames' video embedder</h1>
+            <h1>MParaGames' Catbox Video Embedder</h1>
             <h2>${req.query?.name || ""}</h2>
             <h3><a href="https://files.catbox.moe${req.path}">https://files.catbox.moe${req.path}</a></h3>
             <div class="video">
