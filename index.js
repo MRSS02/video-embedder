@@ -34,9 +34,9 @@ app.get('/*', (req, res) => {
      </body>
     </html> 
     `
-    return html;
+    res.send(html);
+    return;
   }
-
   const html = `<!DOCTYPE html>
     <html lang="en">
       <head>
