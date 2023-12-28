@@ -70,6 +70,9 @@ app.get('/*', (req, res) => {
             margin: 0;
             text-align: center;
           }
+          h1 {
+            margin-bottom: 10px;
+          }
           h1, h3, p, smalltext {
             text-align: center;
           }
