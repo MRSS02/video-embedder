@@ -4,7 +4,8 @@ const PORT = process.env.PORT || 3006;
 const app = express();
 
 app.get('/*', (req, res) => {
-  
+ 
+  console.log(req.path.slice(req.path.lastIndexOf(".") + 1) )
   if (req.path === "/"){
     const html = `<!DOCTYPE html>
     <html lang="en">
@@ -116,9 +117,9 @@ app.get('/*', (req, res) => {
         <meta property="og:video:url" content="https://files.catbox.moe/${req.path}">
         <meta property="og:video:secure:url" content="https://files.catbox.moe/${req.path}"> 
         <meta name="twitter:creator" content="MParaGames' Catbox Video Embedder">
-        ${req.path.slice(req.path.lastIndexOf(".")) + 1 === "mp4" ? "<meta property='og:video:type' content='video/mp4'>" : ""}
-        ${req.path.slice(req.path.lastIndexOf(".")) + 1 === "webm" ? "<meta property='og:video:type' content='video/webm'>" : ""}
-        ${req.path.slice(req.path.lastIndexOf(".")) + 1  === "mov" ? "<meta property='og:video:type' content='video/mov'>" : ""}
+        ${req.path.slice(req.path.lastIndexOf(".") + 1) === "mp4" ? "<meta property='og:video:type' content='video/mp4'>" : ""}
+        ${req.path.slice(req.path.lastIndexOf(".") + 1) === "webm" ? "<meta property='og:video:type' content='video/webm'>" : ""}
+        ${req.path.slice(req.path.lastIndexOf(".") + 1) === "mov" ? "<meta property='og:video:type' content='video/mov'>" : ""}
         <meta property="og:video:width" content="1280">
         <meta property="og:video:height" content="720">
         <meta content="${req.query?.name || "MParaGame's Catbox Video Embedder"}" property="og:title" />
