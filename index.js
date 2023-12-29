@@ -79,11 +79,18 @@ app.get('/*', (req, res) => {
             margin: 0;
             text-align: center;
           }
+          h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+          }
           h1 {
             margin-bottom: 10px;
           }
           h1, h3, p, smalltext {
             text-align: center;
+          }
+          .no-decoration {
+            color: white;
           }
         </style>
         <meta charset="utf-8" />
@@ -118,7 +125,7 @@ app.get('/*', (req, res) => {
       <body>
         <div id="root">
             
-            <h1>MParaGames' Catbox Video Embedder</h1>
+            <h1><a classname="no-decoration" href="${req.headers.host}">MParaGames' Catbox Video Embedder</a></h1>
             <h2>${req.query?.name || ""}</h2>
             <h3><a href="https://files.catbox.moe${req.path}">https://files.catbox.moe${req.path}</a></h3>
             <div class="video">
