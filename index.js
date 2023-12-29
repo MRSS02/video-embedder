@@ -125,7 +125,7 @@ app.get('/*', (req, res) => {
       <body>
         <div id="root">
             
-            <h1><a classname="no-decoration" href="${req.headers.host}">MParaGames' Catbox Video Embedder</a></h1>
+            <h1><a class="no-decoration" href="https://${req.headers.host}">MParaGames' Catbox Video Embedder</a></h1>
             <h2>${req.query?.name || ""}</h2>
             <h3><a href="https://files.catbox.moe${req.path}">https://files.catbox.moe${req.path}</a></h3>
             <div class="video">
