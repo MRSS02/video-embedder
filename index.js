@@ -42,7 +42,7 @@ app.get('/*', (req, res) => {
         <h2>MParaGames's Catbox Video Embedder</h2>
 
         <p>This is a simple video embedder for Discord that embbeds a video uploaded to <a href="https://catbox.moe">catbox.moe</a>. 
-        Only supports video uploads from catbox. Only mp4 support was tested (support for webm will be added), h.264, VP8, VP9, and AV1 videos should work, h.265 doesn't.
+        Only supports video uploads from Catbox. Supports mp4, mov and webm containers, and h264, VP8, VP9, and AV1 encoders. Doesn't support h265.
         <br/><br/>Usage is simple, just replace <a href="https://catbox.moe">catbox.moe</a> with <a href="https://video.starmain.dev">video.starmain.dev</a>
         in your uploaded video link.<br/>If you want your video to have a custom name, just put a query on the paramenter name on it.
         Example: <a href="https://files.catbox.moe/w1tr9y.mp4">https://files.catbox.moe/w1tr9y.mp4</a> can become <a href="https://video.starmain.dev/w1tr9y.mp4?name=my%20Forza%20Horizon%20video">
@@ -110,7 +110,7 @@ app.get('/*', (req, res) => {
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="1280">
         <meta property="og:image:height" content="720">
-        <meta property="og:site_name" content="MParaGames' catbox video embedder"/>
+        <meta property="og:site_name" content="MParaGames' Catbox video embedder"/>
         <meta property='og:image' content='https://files.catbox.moe/rh0eua.webp'>
         <meta property="og:url" content="${req.headers.host}${req.path}" />
         <meta property="og:video" content="https://files.catbox.moe/${req.path}">
