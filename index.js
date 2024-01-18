@@ -100,7 +100,7 @@ app.get('/*', (req, res) => {
         <meta name="description" content="Embbed catbox videos on discord!">
         <meta name="twitter:card" content="player">
         <meta name="twitter:site" content="Video">
-        <meta name="twitter:image" content='https://files.catbox.moe/rh0eua.webp' />
+        <!--meta name="twitter:image" content='https://files.catbox.moe/rh0eua.webp' -->
         <meta name="twitter:player:width" content="1280">
         <meta name="twitter:player:height" content="720">
         <meta name="twitter:player:stream" content="https://files.catbox.moe${req.path}">
