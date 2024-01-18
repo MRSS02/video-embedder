@@ -111,7 +111,7 @@ app.get('/*', (req, res) => {
         <!--meta property="og:image:width" content="1280"-->
         <!--meta property="og:image:height" content="720"-->
         <meta property="og:site_name" content="MParaGames' Catbox video embedder"/>
-        <meta property="og:image" content=https://files.catbox.moe/rh0eua.webp">
+        <meta property="og:image" content="https://files.catbox.moe/rh0eua.webp">
         <meta property="og:url" content="${req.headers.host}${req.path}" />
         <meta property="og:video" content="https://files.catbox.moe${req.path}">
         <meta property="og:video:url" content="https://files.catbox.moe${req.path}">
