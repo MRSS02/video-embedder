@@ -106,6 +106,8 @@ app.get('/*', (req, res) => {
         <meta name="twitter:player:stream" content="https://files.catbox.moe${req.path}">
         <meta name="twitter:player" content="https://files.catbox.moe${req.path}">
         <link rel="amphtml" href="https://files.catbox.moe${req.path}">
+        <link rel="canonical" href="https://files.catbox.moe${req.path}">
+        <link rel="alternate" href="https://files.catbox.moe${req.path}"> 
         <meta property="og:type" content="video.other">
         <meta property="og:image:type" content="image/webp">
         <meta property="og:image:width" content="1280">
