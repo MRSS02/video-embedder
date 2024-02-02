@@ -114,6 +114,7 @@ app.get('/*', (req, res) => {
         <meta property="og:image:height" content="720">
         <meta property="og:site_name" content="MParaGames' Catbox video embedder"/>
         <meta property="og:image" content="https://files.catbox.moe/rh0eua.webp">
+        <meta property="og:image:alt" content="${req.query?.name || "MParaGame's Catbox Video Embedder"}"/>
         <meta property="og:image:secure_url" content="https://files.catbox.moe/rh0eua.webp">
         <meta property="og:url" content="${req.headers.host}${req.path}" />
         <meta property="og:video" content="https://files.catbox.moe${req.path}">
@@ -125,7 +126,7 @@ app.get('/*', (req, res) => {
         ${req.path.slice(req.path.lastIndexOf(".") + 1) === "mov" ? "<meta property='og:video:type' content='video/mov'>" : ""}
         <meta property="og:video:width" content="1280">
         <meta property="og:video:height" content="720">
-        <meta content="${req.query?.name || "MParaGame's Catbox Video Embedder"}" property="og:title" />
+        <meta property="og:title"  content="${req.query?.name || "MParaGame's Catbox Video Embedder"}"/>
         
       </head>
       <body>
