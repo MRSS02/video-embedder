@@ -109,7 +109,7 @@ app.get('/*', (req, res) => {
         <link rel="canonical" href="https://files.catbox.moe${req.path}">
         <link rel="alternate" href="https://files.catbox.moe${req.path}"> 
         <meta property="og:type" content="video.other">
-        <meta property="og:image:type" content="image/webp">
+        <!--meta property="og:image:type" content="image/webp" -->
         <meta property="og:image:width" content="1280">
         <meta property="og:image:height" content="720">
         <meta property="og:site_name" content="MParaGames' Catbox video embedder"/>
@@ -118,7 +118,7 @@ app.get('/*', (req, res) => {
         <meta property="og:image:secure_url" content="https://files.catbox.moe/rh0eua.webp">
         <meta property="og:url" content="${req.headers.host}${req.path}" />
         <meta property="og:video" content="https://files.catbox.moe${req.path}">
-        <meta property="og:video:url" content=""https://files.catbox.moe${req.path}>
+        <meta property="og:video:url" content="https://files.catbox.moe${req.path}">
         <meta property="og:video:secure_url" content="https://files.catbox.moe${req.path}"> 
         <meta name="twitter:creator" content="MParaGames' Catbox Video Embedder">
         ${req.path.slice(req.path.lastIndexOf(".") + 1) === "mp4" ? "<meta property='og:video:type' content='video/mp4'>" : ""}
