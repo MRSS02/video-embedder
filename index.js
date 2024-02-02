@@ -114,7 +114,7 @@ app.get('/*', (req, res) => {
         <meta property="og:image" content="https://files.catbox.moe/rh0eua.webp">
         <meta property="og:image:secure_url" content="https://files.catbox.moe/rh0eua.webp">
         <meta property="og:url" content="${req.headers.host}${req.path}" />
-        <meta property="og:video" content="https://files.catbox.moe${req.path}">
+        ${<meta property="og:video" content="https://files.catbox.moe${req.path}">}
         <meta property="og:video:url" content="https://files.catbox.moe${req.path}">
         <meta property="og:video:secure_url" content="https://files.catbox.moe${req.path}"> 
         <meta name="twitter:creator" content="MParaGames' Catbox Video Embedder">
