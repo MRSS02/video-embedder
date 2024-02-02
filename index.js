@@ -116,9 +116,9 @@ app.get('/*', (req, res) => {
         <meta property="og:image" content="https://files.catbox.moe/rh0eua.webp">
         <meta property="og:image:secure_url" content="https://files.catbox.moe/rh0eua.webp">
         <meta property="og:url" content="${req.headers.host}${req.path}" />
-        <meta property="og:video" content=https://cdn-cf-east.streamable.com/video/mp4/q7i8zs.mp4?Expires=1707100079507&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=VkxaushYUFYKHY4jQ63YONqtR6TwlrvYUQ9UMkL2rPIcMKnl7Pa7Q~mQRODkyjCCN53hFRSSXcjQCRLZe8aJa1Nj55jBayiVnSoMih96mpwg9DehUJi9XbIhYIYLWg~8MF60XzHTWcp-AFcjqWeJlq1~3eVe05VNxSUOHvVyunhB8VEsuZS~~AKY3RKniShI7DxH6KNfIqgFBuA8tGAwbqVFkFKi7IbxuTQpYJxJnLYlczqh7D8IxhJaCiwpU1MvD2E5JEm61IiLsJnvkPKkB0C12kdQYO73ENJPnuIW40Xnn3q3aLmsXMi16736dvrqDNDTTqeI4LvHzj2S-RDSzw__">
-        <meta property="og:video:url" content="https://cdn-cf-east.streamable.com/video/mp4/q7i8zs.mp4?Expires=1707100079507&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=VkxaushYUFYKHY4jQ63YONqtR6TwlrvYUQ9UMkL2rPIcMKnl7Pa7Q~mQRODkyjCCN53hFRSSXcjQCRLZe8aJa1Nj55jBayiVnSoMih96mpwg9DehUJi9XbIhYIYLWg~8MF60XzHTWcp-AFcjqWeJlq1~3eVe05VNxSUOHvVyunhB8VEsuZS~~AKY3RKniShI7DxH6KNfIqgFBuA8tGAwbqVFkFKi7IbxuTQpYJxJnLYlczqh7D8IxhJaCiwpU1MvD2E5JEm61IiLsJnvkPKkB0C12kdQYO73ENJPnuIW40Xnn3q3aLmsXMi16736dvrqDNDTTqeI4LvHzj2S-RDSzw__">
-        <meta property="og:video:secure_url" content="https://cdn-cf-east.streamable.com/video/mp4/q7i8zs.mp4?Expires=1707100079507&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=VkxaushYUFYKHY4jQ63YONqtR6TwlrvYUQ9UMkL2rPIcMKnl7Pa7Q~mQRODkyjCCN53hFRSSXcjQCRLZe8aJa1Nj55jBayiVnSoMih96mpwg9DehUJi9XbIhYIYLWg~8MF60XzHTWcp-AFcjqWeJlq1~3eVe05VNxSUOHvVyunhB8VEsuZS~~AKY3RKniShI7DxH6KNfIqgFBuA8tGAwbqVFkFKi7IbxuTQpYJxJnLYlczqh7D8IxhJaCiwpU1MvD2E5JEm61IiLsJnvkPKkB0C12kdQYO73ENJPnuIW40Xnn3q3aLmsXMi16736dvrqDNDTTqeI4LvHzj2S-RDSzw__"> 
+        <meta property="og:video" content="https://files.catbox.moe${req.path}">
+        <meta property="og:video:url" content=""https://files.catbox.moe${req.path}>
+        <meta property="og:video:secure_url" content="https://files.catbox.moe${req.path}"> 
         <meta name="twitter:creator" content="MParaGames' Catbox Video Embedder">
         ${req.path.slice(req.path.lastIndexOf(".") + 1) === "mp4" ? "<meta property='og:video:type' content='video/mp4'>" : ""}
         ${req.path.slice(req.path.lastIndexOf(".") + 1) === "webm" ? "<meta property='og:video:type' content='video/webm'>" : ""}
